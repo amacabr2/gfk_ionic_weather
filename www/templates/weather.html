@@ -1,8 +1,16 @@
-<ion-view>
+<ion-view ng-controller="WeatherCtrl" view-title="Météo : {{ weather.city.name }} / {{ weather.city.country}}">
 
     <ion-content class="padding">
 
-        {{ weather }}
+        <div class="container">
+
+            <div class="row" ng-repeat="t in weather.list">
+                <div class="twelve columns">
+                    {{ Math.round(t.main.temp) }} °C
+                </div>
+            </div>
+
+        </div>
 
     </ion-content>
 
