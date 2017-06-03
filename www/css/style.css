@@ -1,1 +1,23 @@
+.block {
+    height: 60px;
+    line-height: 60px;
+    padding: 2%;
+    background-color: #394163;
+    border-radius: 2%;
+    margin-bottom: 2px;
+    color: #ffffff;
+}
 
+.temperature {
+    float: right;
+    font-weight: bold;
+}
+
+.owf {
+    float: left;
+}
+
+.date {
+    float: left;
+    margin-left: 2%;
+}
