@@ -25,10 +25,13 @@ app.run(function($ionicPlatform) {
 
 app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
-    $httpProvider.defaults.headers.post['Content-Type'] = ' application/json; charset=utf-8';
-    $httpProvider.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-    $httpProvider.defaults.headers.post['Access-Control-Allow-Credentials'] = true;
-    $httpProvider.defaults.headers.post['Access-Control-Allow-Methods'] = 'GET, POST';
+    $httpProvider.defaults.useXDomain = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
+    //$httpProvider.defaults.headers.post['Content-Type'] = ' application/json; charset=utf-8';
+    //$httpProvider.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+    //$httpProvider.defaults.headers.post['Access-Control-Allow-Credentials'] = true;
+    //$httpProvider.defaults.headers.post['Access-Control-Allow-Methods'] = 'GET, POST';
 
     $stateProvider.state('home', {
         url: '/home',
