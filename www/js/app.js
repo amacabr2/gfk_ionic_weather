@@ -36,13 +36,13 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     $stateProvider.state('home', {
         url: '/home',
         templateUrl: 'templates/home.html',
-        controller: 'HomeCtrl'
+        //controller: 'HomeCtrl'
     });
 
     $stateProvider.state('weather', {
         url: '/weather/:city',
         templateUrl: 'templates/weather.html',
-        controller: 'WeatherCtrl'
+        //controller: 'WeatherCtrl'
     });
 
     $stateProvider.state('about', {
