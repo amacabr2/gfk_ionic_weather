@@ -1,0 +1,14 @@
+{
+  "name": "Demo",
+  "app_id": "your_app_id",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ],
+  "type": "ionic1"
+}
