@@ -42,7 +42,7 @@ app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
     $stateProvider.state('weather', {
         url: '/weather/:city',
         templateUrl: 'templates/weather.html',
-        //controller: 'WeatherCtrl'
+        controller: 'WeatherCtrl'
     });
 
     $stateProvider.state('about', {
